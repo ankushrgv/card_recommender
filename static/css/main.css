@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	background-color: #ededed;
+	font-family: "Proxima Nova", sans-serif;
+}
+
+li {
+	list-style: inside none none;
+}
+
+.header{
+	height: 80px;
+	text-align: center;
+	/*margin-bottom: 5px;*/
+	background-color: #39424e;
+	color: #ffffff;
+	/*font-family: "SF Atarian System", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+}
+
+.header h2{
+	margin: 0;
+	padding-top: 25px;
+	height:40px;
+	/*font-family: "A Love of Thunder", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+	font-size: 20px;
+}
+
+.survey-form-container {
+	width: 70%;
+	margin: auto;
+	background-color: #fff;
+}
+
+.question-list-container{
+	padding-top: 35px;
+}
+
+.question-container {
+	width: 85%;
+}
+
+.options-container p{
+	display: inline;
+	font-size: 14px;
+	padding: 0 0 0 12px;
+}
+
+.options-container li{
+	margin: 0 0 15px 0;
+}
