@@ -3,159 +3,15 @@
 {% block layout %}
 	<div class="content" id="content">
 		<div class="survey-form-container" id="survey-form-container">
+			<div class="head-message" id="head-message">
+				<p>Complete the short survey below, and we'll get you credit cards as per your needs..!!</p>
+			</div>
 			<form id="survey-form" method="POST" action="">
 				{% csrf_token %}
 				<ul class="question-list-container" id="question-list-container">
 					<li class="question">
 						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
-						</div>
-						<ul class="options-container" id="options-container">
-							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
-							</li>
-						</ul>
-					</li><li class="question">
-						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
-						</div>
-						<ul class="options-container" id="options-container">
-							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
-							</li>
-						</ul>
-					</li><li class="question">
-						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
-						</div>
-						<ul class="options-container" id="options-container">
-							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
-							</li>
-						</ul>
-					</li><li class="question">
-						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
-						</div>
-						<ul class="options-container" id="options-container">
-							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
-							</li>
-						</ul>
-					</li><li class="question">
-						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
-						</div>
-						<ul class="options-container" id="options-container">
-							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
-							</li>
-						</ul>
-					</li><li class="question">
-						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
-						</div>
-						<ul class="options-container" id="options-container">
-							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
-							</li>
-						</ul>
-					</li><li class="question">
-						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
-						</div>
-						<ul class="options-container" id="options-container">
-							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
-							</li>
-							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
-							</li>
-						</ul>
-					</li><li class="question">
-						<div class="question-container" id="question-container">
-							<p> What's the max amount you think you need to withdraw from the ATM in a day?</p>
+							<p>1.  What's the max amount you think you need to withdraw from the ATM in a day?</p>
 						</div>
 						<ul class="options-container" id="options-container">
 							<li>
@@ -175,8 +31,111 @@
 							</li>
 						</ul>
 					</li>
+					<li class="question">
+						<div class="question-container" id="question-container">
+							<p>2. How much do you think you'll pay using card swipes in a day?</p>
+						</div>
+						<ul class="options-container" id="options-container">
+							<li>
+								<input type="radio" name="cash_swipes" value="a" checked><p>Less than or equal to Rs. 1.25 Lac</p>
+							</li>
+							<li>
+								<input type="radio" name="cash_swipes" value="b" ><p>Less than or equal to Rs. 1.75 Lacs</p>
+							</li>
+							<li>
+								<input type="radio" name="cash_swipes" value="c" ><p>Less than or equal to Rs. 2.25 Lacs</p>
+							</li>
+							<li>
+								<input type="radio" name="cash_swipes" value="d" ><p>Less than or equal to Rs. 2.75 Lacs </p>
+							</li>
+							<li>
+								<input type="radio" name="cash_swipes" value="e" ><p>More than Rs. 2.75 Lacs </p>
+							</li>
+						</ul>
+					</li>
+					<li class="question">
+						<div class="question-container" id="question-container">
+							<p>3. At max, how much will you spend on online shopping using your card in a day?</p>
+						</div>
+						<ul class="options-container" id="options-container">
+							<li>
+								<input type="radio" name="online_shopping" value="a" checked><p>Less than or equal to Rs. 1.25 Lacs</p>
+							</li>
+							<li>
+								<input type="radio" name="online_shopping" value="b" ><p>Less than or equal to Rs. 1.75 Lacs</p>
+							</li>
+							<li>
+								<input type="radio" name="online_shopping" value="c" ><p>Less than or equal to Rs. 2.25 Lacs </p>
+							</li>
+							<li>
+								<input type="radio" name="online_shopping" value="d" ><p>Less than or equal to Rs. 2.75 Lacs </p>
+							</li>
+							<li>
+								<input type="radio" name="online_shopping" value="e" ><p>More than Rs. 2.75 Lacs </p>
+							</li>
+						</ul>
+					</li>
+					<li class="question">
+						<div class="question-container" id="question-container">
+							<p>4. How frequently do you take flights to go places?</p>
+						</div>
+						<ul class="options-container" id="options-container">
+							<li>
+								<input type="radio" name="flight" value="a" checked><p>Never / Once or Twice an year</p>
+							</li>
+							<li>
+								<input type="radio" name="flight" value="b" ><p>Two to Four times in six months</p>
+							</li>
+							<li>
+								<input type="radio" name="flight" value="c" ><p>Atleast twice a month</p>
+							</li>
+							<li>
+								<input type="radio" name="flight" value="d" ><p>Atleast twice a week</p>
+							</li>
+						</ul>
+					</li>
+					<li class="question">
+						<div class="question-container" id="question-container">
+							<p>5. For what purpose do you drive your car?</p>
+						</div>
+						<ul class="options-container" id="options-container">
+							<li>
+								<input type="radio" name="car" value="a" checked><p>To go to office daily</p>
+							</li>
+							<li>
+								<input type="radio" name="car" value="b" ><p>To go places other than office in same city</p>
+							</li>
+							<li>
+								<input type="radio" name="car" value="c" ><p>Outstations trips only</p>
+							</li>
+							<li>
+								<input type="radio" name="car" value="e" ><p>Emergency purpose only / Very rarely</p>
+							</li>
+						</ul>
+					</li>
+					<li class="question">
+						<div class="question-container" id="question-container">
+							<p>6. How often do you go out to see a movie?</p>
+						</div>
+						<ul class="options-container" id="options-container">
+							<li>
+								<input type="radio" name="movie" value="a" checked><p>Never / Once or Twice an year</p>
+							</li>
+							<li>
+								<input type="radio" name="movie" value="b" ><p>Two to Four times in six months</p>
+							</li>
+							<li>
+								<input type="radio" name="movie" value="c" ><p>Atleast twice a month</p>
+							</li>
+							<li>
+								<input type="radio" name="movie" value="d" ><p>Atleast twice a week</p>
+							</li>
+						</ul>
+					</li>
 				</ul>
-				<button type="submit" id="search-form-submit" class="search-form-submit">Search</button>
+				<div class="submit-button-container" id="submit-button-container">
+					<button type="submit" id="survey-form-button" class="survey-form-button">Submit</button>
+				</div>
 			</form>
 		</div>
 	</div>
