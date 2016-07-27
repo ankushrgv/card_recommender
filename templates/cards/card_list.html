@@ -1,0 +1,10 @@
+{% extends 'layout/base.html' %}
+
+{% block layout %}
+	<div class="content" id="content">
+		{% for result in results%}
+			<p> {{ result.card_name }} </p>
+		{% endfor %}
+
+	</div>
+{% endblock layout %}
