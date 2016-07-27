@@ -46,12 +46,19 @@ li {
 }
 
 .question{
-	margin-bottom: 40px;
+	margin-bottom: 30px;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: #EBEBEB;
 }
 
 .question-container {
 	width: 88%;
 	margin-bottom: 25px;
+}
+
+.options-container {
+	padding-bottom: 20px;
 }
 
 .options-container p{

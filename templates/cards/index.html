@@ -6,7 +6,7 @@
 			<div class="head-message" id="head-message">
 				<p>Complete the short survey below, and we'll get you credit cards as per your needs..!!</p>
 			</div>
-			<form id="survey-form" method="POST" action="">
+			<form id="survey-form" method="POST" action="cards">
 				{% csrf_token %}
 				<ul class="question-list-container" id="question-list-container">
 					<li class="question">
@@ -15,19 +15,19 @@
 						</div>
 						<ul class="options-container" id="options-container">
 							<li>
-								<input type="radio" name="cash_withdraw" value="a" checked><p>Less than or equal to Rs. 75 Thousand</p>
+								<input type="radio" name="cash_withdraw" value="0" checked><p>Less than or equal to Rs. 75 Thousand</p>
 							</li>
 							<li>
-								<input type="radio" name="cash_withdraw" value="b" ><p>Less than or equal to Rs. 1.25 Lacs</p>
+								<input type="radio" name="cash_withdraw" value="1" ><p>Less than or equal to Rs. 1.25 Lacs</p>
 							</li>
 							<li>
-								<input type="radio" name="cash_withdraw" value="c" ><p>Less than or equal to Rs. 1.75 Lacs</p>
+								<input type="radio" name="cash_withdraw" value="2" ><p>Less than or equal to Rs. 1.75 Lacs</p>
 							</li>
 							<li>
-								<input type="radio" name="cash_withdraw" value="d" ><p>Less than or equal to Rs. 2.25 Lacs </p>
+								<input type="radio" name="cash_withdraw" value="3" ><p>Less than or equal to Rs. 2.25 Lacs </p>
 							</li>
 							<li>
-								<input type="radio" name="cash_withdraw" value="e" ><p>More than Rs. 2.25 Lacs </p>
+								<input type="radio" name="cash_withdraw" value="4" ><p>More than Rs. 2.25 Lacs </p>
 							</li>
 						</ul>
 					</li>
@@ -37,19 +37,19 @@
 						</div>
 						<ul class="options-container" id="options-container">
 							<li>
-								<input type="radio" name="cash_swipes" value="a" checked><p>Less than or equal to Rs. 1.25 Lac</p>
+								<input type="radio" name="cash_swipe" value="0" checked><p>Less than or equal to Rs. 1.25 Lac</p>
 							</li>
 							<li>
-								<input type="radio" name="cash_swipes" value="b" ><p>Less than or equal to Rs. 1.75 Lacs</p>
+								<input type="radio" name="cash_swipe" value="1" ><p>Less than or equal to Rs. 1.75 Lacs</p>
 							</li>
 							<li>
-								<input type="radio" name="cash_swipes" value="c" ><p>Less than or equal to Rs. 2.25 Lacs</p>
+								<input type="radio" name="cash_swipe" value="2" ><p>Less than or equal to Rs. 2.25 Lacs</p>
 							</li>
 							<li>
-								<input type="radio" name="cash_swipes" value="d" ><p>Less than or equal to Rs. 2.75 Lacs </p>
+								<input type="radio" name="cash_swipe" value="3" ><p>Less than or equal to Rs. 2.75 Lacs </p>
 							</li>
 							<li>
-								<input type="radio" name="cash_swipes" value="e" ><p>More than Rs. 2.75 Lacs </p>
+								<input type="radio" name="cash_swipe" value="4" ><p>More than Rs. 2.75 Lacs </p>
 							</li>
 						</ul>
 					</li>
@@ -59,19 +59,19 @@
 						</div>
 						<ul class="options-container" id="options-container">
 							<li>
-								<input type="radio" name="online_shopping" value="a" checked><p>Less than or equal to Rs. 1.25 Lacs</p>
+								<input type="radio" name="online_shopping" value="0" checked><p>Less than or equal to Rs. 1.25 Lacs</p>
 							</li>
 							<li>
-								<input type="radio" name="online_shopping" value="b" ><p>Less than or equal to Rs. 1.75 Lacs</p>
+								<input type="radio" name="online_shopping" value="1" ><p>Less than or equal to Rs. 1.75 Lacs</p>
 							</li>
 							<li>
-								<input type="radio" name="online_shopping" value="c" ><p>Less than or equal to Rs. 2.25 Lacs </p>
+								<input type="radio" name="online_shopping" value="2" ><p>Less than or equal to Rs. 2.25 Lacs </p>
 							</li>
 							<li>
-								<input type="radio" name="online_shopping" value="d" ><p>Less than or equal to Rs. 2.75 Lacs </p>
+								<input type="radio" name="online_shopping" value="3" ><p>Less than or equal to Rs. 2.75 Lacs </p>
 							</li>
 							<li>
-								<input type="radio" name="online_shopping" value="e" ><p>More than Rs. 2.75 Lacs </p>
+								<input type="radio" name="online_shopping" value="4" ><p>More than Rs. 2.75 Lacs </p>
 							</li>
 						</ul>
 					</li>
@@ -81,16 +81,16 @@
 						</div>
 						<ul class="options-container" id="options-container">
 							<li>
-								<input type="radio" name="flight" value="a" checked><p>Never / Once or Twice an year</p>
+								<input type="radio" name="flight" value="0" checked><p>Never / Once or Twice an year</p>
 							</li>
 							<li>
-								<input type="radio" name="flight" value="b" ><p>Two to Four times in six months</p>
+								<input type="radio" name="flight" value="1" ><p>Two to Four times in six months</p>
 							</li>
 							<li>
-								<input type="radio" name="flight" value="c" ><p>Atleast twice a month</p>
+								<input type="radio" name="flight" value="2" ><p>Atleast twice a month</p>
 							</li>
 							<li>
-								<input type="radio" name="flight" value="d" ><p>Atleast twice a week</p>
+								<input type="radio" name="flight" value="3" ><p>Atleast twice a week</p>
 							</li>
 						</ul>
 					</li>
@@ -100,17 +100,17 @@
 						</div>
 						<ul class="options-container" id="options-container">
 							<li>
-								<input type="radio" name="car" value="a" checked><p>To go to office daily</p>
+								<input type="radio" name="car" value="0" checked><p>Emergency purpose only / Very rarely</p>
 							</li>
 							<li>
-								<input type="radio" name="car" value="b" ><p>To go places other than office in same city</p>
+								<input type="radio" name="car" value="1" ><p>Outstations trips only</p>
 							</li>
 							<li>
-								<input type="radio" name="car" value="c" ><p>Outstations trips only</p>
+								<input type="radio" name="car" value="2" ><p>To go places other than office in same city</p>
 							</li>
 							<li>
-								<input type="radio" name="car" value="e" ><p>Emergency purpose only / Very rarely</p>
-							</li>
+								<input type="radio" name="car" value="3" ><p>To go to office daily</p>
+							</li> 
 						</ul>
 					</li>
 					<li class="question">
@@ -119,16 +119,16 @@
 						</div>
 						<ul class="options-container" id="options-container">
 							<li>
-								<input type="radio" name="movie" value="a" checked><p>Never / Once or Twice an year</p>
+								<input type="radio" name="movie" value="0" checked><p>Never / Once or Twice an year</p>
 							</li>
 							<li>
-								<input type="radio" name="movie" value="b" ><p>Two to Four times in six months</p>
+								<input type="radio" name="movie" value="1" ><p>Two to Four times in six months</p>
 							</li>
 							<li>
-								<input type="radio" name="movie" value="c" ><p>Atleast twice a month</p>
+								<input type="radio" name="movie" value="2" ><p>Atleast twice a month</p>
 							</li>
 							<li>
-								<input type="radio" name="movie" value="d" ><p>Atleast twice a week</p>
+								<input type="radio" name="movie" value="3" ><p>Atleast twice a week</p>
 							</li>
 						</ul>
 					</li>

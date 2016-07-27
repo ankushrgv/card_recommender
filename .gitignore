@@ -71,3 +71,6 @@ db.*
 
 ## ignore static root
 static_root/
+
+## ignore intellij files
+.idea/

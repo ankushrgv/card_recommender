@@ -4,13 +4,13 @@ from django.db import models
 
 # Create your models here.
 
-class CreditCards(models.Model):
+class CreditCard(models.Model):
 	card_name = models.CharField(max_length=40)
 	cash_withdrawal_limit = models.PositiveIntegerField()
 	swipe_shopping_limit = models.PositiveIntegerField()
 	online_shopping_limit = models.PositiveIntegerField()
 	reward_points = models.PositiveSmallIntegerField()
-	pusrchase_protection = models.PositiveIntegerField()
+	purchase_protection = models.PositiveIntegerField()
 	insurance_air = models.PositiveIntegerField()
 	insurance_non_air = models.PositiveIntegerField()
 	fuel_surcharge_waiver = models.BooleanField(default=False)
