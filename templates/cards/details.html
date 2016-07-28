@@ -1,0 +1,109 @@
+{% extends 'layout/base.html' %}
+
+{% load static from staticfiles %}
+{% load static %}
+
+{% block layout %}
+	<div class="content" id="content">
+		<div class="content-body" id="content-body">
+			<div class="card-name-heading">
+				<h2>{{ creditcard.card_name }}</h2>
+			</div>
+			<div class="card-container">
+				<div class="card-big-image-container">
+					<img src="{% get_static_prefix %}images/{{ creditcard.id}}big.jpg">
+				</div>
+				<div class="card-details-container">
+					<ul class="card-features">
+						<li>
+							<p class="card-feature">Daily ATM Limit</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.cash_withdrawal_limit }} </p>
+						</li>
+						<li>
+							<p class="card-feature">Daily Swipe Shopping limit</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.swipe_shopping_limit }} </p>
+						</li>
+						<li>
+							<p class="card-feature">Daily Online Shopping limit</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.online_shopping_limit }} </p>
+						</li>
+												<li>
+							<p class="card-feature">Reward Points (per Rs. 200)</p> <p class="colon">:</p>
+							<p class="card-feature-value"> {{ creditcard.reward_points }} Points</p>
+						</li>
+												<li>
+							<p class="card-feature">Purchase Protection</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.purchase_protection }} </p>
+						</li>
+												<li>
+							<p class="card-feature">Personal Accident Insurance (Air)</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.insurance_air }} </p>
+						</li>
+												<li>
+							<p class="card-feature">Personal Accident Insurance (Non Air)</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.insurance_non_air}} </p>
+						</li>
+												<li>
+							<p class="card-feature">Daily ATM Limit</p> <p class="colon">:</p>
+							<p class="card-feature-value"> 
+								{% if creditcard.fuel_surcharge_waiver == True %}
+									At all HPCL stations
+								{% else %}
+									At selected HPCL stations
+								{% endif %}
+							</p>
+						</li>
+						<li>
+							<p class="card-feature">EMV card Security Chip</p> <p class="colon">:</p>
+							<p class="card-feature-value">
+								{% if creditcard.emv_chip == True %}
+									Yes
+								{% else %}
+									No
+								{% endif %}
+							</p>
+						</li>
+						<li>
+							<p class="card-feature">Complimentary Airport Lounge Access</p> <p class="colon">:</p>
+							<p class="card-feature-value">
+								{% if creditcard.airport_lounge_access == 0 %}
+									No
+								{% else %}
+									Yes ({{ creditcard.airport_lounge_access }} times in 3 months)
+								{% endif %}
+							</p>
+						</li>
+						<li>
+							<p class="card-feature">Buy 1 Get 1 on BookMyShow.com</p> <p class="colon">:</p>
+							<p class="card-feature-value">
+								{% if creditcard.bookmyshow == True %}
+									Yes
+								{% else %}
+									No
+								{% endif %}
+							</p>
+						</li>
+						<li>
+							<p class="card-feature">Buy 1 Get 1 on Big Cinemas</p> <p class="colon">:</p>
+							<p class="card-feature-value">
+								{% if creditcard.big_cinemas == True %}
+									Yes
+								{% else %}
+									No
+								{% endif %}
+							</p>
+						</li>
+						<li>
+							<p class="card-feature">Joining Fee</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.joining_fee }} </p>
+						</li>
+						<li>
+							<p class="card-feature">Annual fee</p> <p class="colon">:</p>
+							<p class="card-feature-value"> Rs. {{ creditcard.annual_fee }} </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock layout %}

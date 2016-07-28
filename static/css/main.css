@@ -8,6 +8,11 @@ li {
 	list-style: inside none none;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
 .header{
 	height: 80px;
 	text-align: center;
@@ -22,14 +27,26 @@ li {
 	font-size: 20px;
 }
 
-.head-message {
+.head-message{
 	width: 85%;
 	margin: auto;
 	padding-top: 30px;
 	font-size: 18px;
 }
 
-.survey-form-container {
+.card-name-heading {
+	width: 85%;
+	margin: auto;
+	padding: 30px 0 0 45px;
+}
+
+.card-name-heading h2{
+	font-size: 28px;
+}
+
+
+
+.survey-form-container, .content-body{
 	width: 70%;
 	margin: auto;
 	margin-top: 35px;
@@ -39,7 +56,7 @@ li {
 	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 }
 
-.question-list-container{
+.question-list-container, .card-list{
 	margin: auto;
 	padding-top: 15px;
 	width: 85%;
@@ -85,4 +102,69 @@ li {
 	border-radius: 3px;
 	background-color: #29b35b;
 	color: #fff;
+}
+
+.card {
+	height: 175px;
+}
+
+td {
+	padding-left: 65px;
+}
+
+.card-info-container{
+	height: 150px;
+}
+
+.card-info-container h3{
+	margin-top: -30px;
+}
+
+.card-info-container p, .card-info-container h4{
+	display: inline-block;
+	font-size: 13px;
+	margin: 5px 0 5px 0;
+}
+
+.card-info-container p#left {
+	width: 200px;
+}
+
+.card-container {
+	width: 80%;
+	margin: auto;
+}
+
+.card-big-image-container{
+	width: 35%;
+	display: inline;
+}
+
+.card-big-image-container img{
+	height: 120px;
+	width: 190px;
+}
+
+.card-details-container {
+	width: 60%;
+	display: inline;
+}
+
+.card-feature{
+	font-size: 13px;
+	color: #737373;
+	width: 255px;
+}
+
+.colon, .card-feature, .card-feature-value{
+	display: inline-block;
+	margin: 10px 0 10px 0;
+}
+
+.card-feature-value{
+	padding-left: 20px;
+}
+
+.card-features{
+	padding-bottom: 40px;
 }

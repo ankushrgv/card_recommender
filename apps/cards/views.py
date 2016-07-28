@@ -26,7 +26,7 @@ class CardList(TemplateView, FormView):
 	template_name = 'cards/card_list.html'
 	form_class = forms.SurveyForm
 	success_url = '/cards'
-	result_list = []
+	result_list = [0,0,0,0,0,0,0,0]
 
 	def get_score(self, a, b, lookup_value):
 
@@ -118,11 +118,13 @@ class CardList(TemplateView, FormView):
 			+ big_cinemas_score + joining_fee_score + annual_fee_score
 
 		sorted_card_scores = sorted(card_scores.items(), key=operator.itemgetter(1), reverse=True)
-		results = []
 
+		# self.result_list = []
+		i = 0
 		for key, value in sorted_card_scores:
 			card_obj = credit_cards[key-1]
-			self.result_list.append(card_obj)
+			self.result_list[i] = card_obj
+			i += 1
 
 		form = self.get_form()
 		print "self result_list post = ", self.result_list
@@ -139,3 +141,9 @@ class CardList(TemplateView, FormView):
 		context['results'] = self.result_list
 
 		return context
+
+
+class CardDetails(DetailView):
+
+	model = models.CreditCard
+	template_name = "cards/details.html"

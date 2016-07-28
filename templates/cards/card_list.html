@@ -1,10 +1,43 @@
+
 {% extends 'layout/base.html' %}
+
+{% load static from staticfiles %}
+{% load static %}
 
 {% block layout %}
 	<div class="content" id="content">
-		{% for result in results%}
-			<p> {{ result.card_name }} </p>
-		{% endfor %}
-
+		<div class="content-body" id="content-body">
+			<div class="head-message" id="head-message">
+				<p>Credit Cards as per your needs..!! Apply Now..!!</p>
+			</div>
+			<div class="card-list-container" id="card-list-container">
+				<table class="card-list" id="card-list">
+					{% for result in results %}
+						<tr class="card" id="card">
+							<td class="card-image-container" id="card-image-container">
+								<a href="{% url "cards:carddetails" pk=result.id %}" id="{{ result.id }}" class="card-a-tag">
+								<img class="card-image" id="card-image" data-card-id="{{result.id}}" src="{% get_static_prefix %}images/{{ result.id}}.jpg">
+								</a>
+							</td>
+							<td class="card-info-container" id="card-info-container">
+								<h3> {{ result.card_name }} </h3>
+								<div class="atm-limit">
+									<p class="left" id="left"> Daily ATM limit </p> <p>:</p> 
+									<h4> Rs. {{ result.cash_withdrawal_limit}} </h4>
+								</div>
+								<div class="swip-limit">
+									<p class="left" id="left"> Daily Swipe Shopping limit </p> <p>:</p> 
+									<h4> Rs. {{ result.swipe_shopping_limit}} </h4>
+								</div>
+								<div class="online-limit">
+									<p class="left" id="left"> Daily Online Shopping limit </p> <p>:</p> 
+									<h4> Rs. {{ result.online_shopping_limit}} </h4>
+								</div>
+							</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
 	</div>
 {% endblock layout %}
